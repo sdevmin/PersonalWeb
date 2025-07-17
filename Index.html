@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sachira Devmin - Personal Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Image with JS Hover -->
+  <header class="hero-image" onmouseover="showText()" onmouseout="hideText()">
+    <div class="hover-text" id="hoverText">Hey, I’m Sachira</div>
+  </header>
+
+  <!-- Profile Section -->
+  <section id="about" class="profile-section">
+    <img src="images/profile.jpg" alt="Sachira Devmin">
+    <p>Full-stack Developer | Creative Thinker</p>
+  </section>
+
+  <!-- Projects -->
+  <section id="work" class="projects">
+    <div class="project-card">
+      <img src="images/project1.jpg" alt="Project 1">
+      <h3>Lost and Found Map App</h3>
+      <p>A Java Android app with Android geo features </p>
+      <a href="https://github.com/sdevmin/LostFoundMapApp">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+        <img src="images/project2.jpg" alt="Project 1">
+        <h3>Task Manager App</h3>
+        <p>A Java Android app</p>
+        <a href="https://github.com/sdevmin/TaskManagerApp">View on GitHub</a>
+      </div>
+   
+  </section>
+
+  <!-- Image Gallery -->
+  <section class="gallery">
+    <img src="images/gallery1.jpg" alt="Gallery 1">
+    <img src="images/gallery2.jpg" alt="Gallery 2">
+    <img src="images/gallery3.jpg" alt="Gallery 3">
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: sachiradevmin17@gmail.com</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
