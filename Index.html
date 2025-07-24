@@ -16,7 +16,7 @@
     </ul>
   </nav>
 
-  <!-- Header Image with JS Hover -->
+  <!-- Header Image with Hover Text -->
   <header class="hero-image" onmouseover="showText()" onmouseout="hideText()">
     <div class="hover-text" id="hoverText">Hey, I’m Sachira</div>
   </header>
@@ -27,37 +27,48 @@
     <p>Full-stack Developer | Creative Thinker</p>
   </section>
 
-  <!-- Projects -->
+  <!-- Projects Section -->
   <section id="work" class="projects">
     <div class="project-card">
-      <img src="images/project1.jpg" alt="Project 1">
+      <img src="images/project1.jpg" alt="Lost and Found Map App">
       <h3>Lost and Found Map App</h3>
-      <p>A Java Android app with Android geo features </p>
-      <a href="https://github.com/sdevmin/LostFoundMapApp">View on GitHub</a>
+      <p>A Java Android app with Android geo features</p>
+      <a href="https://github.com/sdevmin/LostFoundMapApp" target="_blank">View on GitHub</a>
     </div>
 
     <div class="project-card">
-        <img src="images/project2.jpg" alt="Project 1">
-        <h3>Task Manager App</h3>
-        <p>A Java Android app</p>
-        <a href="https://github.com/sdevmin/TaskManagerApp">View on GitHub</a>
-      </div>
-   
+      <img src="images/project2.jpg" alt="Task Manager App">
+      <h3>Task Manager App</h3>
+      <p>A Java Android app</p>
+      <a href="https://github.com/sdevmin/TaskManagerApp" target="_blank">View on GitHub</a>
+    </div>
   </section>
 
-  <!-- Image Gallery -->
+  <!-- Gallery Section -->
+  <h2 class="gallery-title">My Photo Gallery</h2>
   <section class="gallery">
     <img src="images/gallery1.jpg" alt="Gallery 1">
     <img src="images/gallery2.jpg" alt="Gallery 2">
     <img src="images/gallery3.jpg" alt="Gallery 3">
+    <img src="images/gallery4.jpg" alt="Gallery 4">
+    <img src="images/gallery5.jpg" alt="Gallery 5">
+    <img src="images/gallery6.jpg" alt="Gallery 6">
   </section>
 
-  <!-- Contact -->
+  <!-- Contact Section -->
   <section id="contact" class="contact">
     <h2>Contact Me</h2>
     <p>Email: sachiradevmin17@gmail.com</p>
   </section>
 
-  <script src="script.js"></script>
+  <script>
+    function showText() {
+      document.getElementById("hoverText").style.opacity = 1;
+    }
+
+    function hideText() {
+      document.getElementById("hoverText").style.opacity = 0;
+    }
+  </script>
 </body>
 </html>
